@@ -4,7 +4,7 @@
     grid-template-columns: repeat(1, 250px 10%);
     background-color: #ffffff;
     border-radius: 8px;
-    max-width: 390px;
+    max-width: 360px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -17,7 +17,7 @@
 .JEAN2 {
     font-size: 15px;
     display: grid;
-    
+
 }
 
 .JEAN3 {
@@ -29,7 +29,7 @@
     background-color: #ffffff;
     border-radius: 8px;
     gap: 10px;
-    max-width: 390px;
+    max-width: 360px;
     margin: auto;
     border-radius: 8px;
     border-bottom-left-radius: 0px;
@@ -46,7 +46,7 @@
     background-color: #ffffff;
     border-radius: 8px;
     gap: 10px;
-    max-width: 390px;
+    max-width: 360px;
     margin: auto;
     border-radius: 8px;
     border-bottom-left-radius: 0px;
@@ -58,7 +58,7 @@
     --text: #000000;
     --check: #000000;
     --disabled: #000000;
-    max-width: 390px;
+    max-width: 360px;
     border-radius: 8px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -76,7 +76,8 @@
 .item {
     display: flex;
     align-items: center;
-    max-width: 390px;
+    max-width: 360px;
+
 }
 
 #checklist label {
@@ -88,7 +89,7 @@
     width: fit-content;
     transition: color 0.3s ease;
     margin-right: 20px;
-    font-size: 9.5px;
+    font-size: 8px;
     white-space: nowrap;
     padding-left: 10px;
     font-family: 'Khmer', sans-serif;
