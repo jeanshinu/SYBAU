@@ -267,3 +267,7 @@
     display: flex;
     gap: 20px;
 }
+
+#checklist input[type="checkbox"]:checked + label {
+    opacity: 0.4;
+}
