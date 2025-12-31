@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+
+    <div class="JEAN0">
+        <div class="JEAN1">
+            <div class="p-4" onload="disp_TZ()">
+                <span id="tz"></span>
+            </div>
+        </div>
+        <div class="JEAN2">
+            <button onclick="myFunction()" id="resetBtn" type="button"><i
+                    class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYBAU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='fonts.googleapis.com' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <title>SYBAU</title>
+</head>
+
+<body>
+
+    <main class="bg-gray-100">
+        <div class="JEAN4">
+            បន្លែ
+        </div>
+        <div id="checklist" class="m-auto shadow-md">
+            <div class="item">
+                <input value="01" name="r" type="checkbox" id="01" data-key="01">
+                <label for="01">ត្រកួន</label>
+            </div>
+            <div class="item">
+                <input value="02" name="r" type="checkbox" id="02" data-key="02">
+                <label for="02">កញ្ឆែត</label>
+            </div>
+            <div class="item">
+                <input value="03" name="r" type="checkbox" id="03" data-key="03">
+                <label for="03">ម្រៈព្រៅ</label>
+            </div>
+            <div class="item">
+                <input value="04" name="r" type="checkbox" id="04" data-key="04">
+                <label for="04">គ្រឿងបុក</label>
+            </div>
+            <div class="item">
+                <input value="05" name="r" type="checkbox" id="05" data-key="05">
+                <label for="05">គល់គ្រៃហាន់</label>
+            </div>
+            <div class="item">
+                <input value="06" name="r" type="checkbox" id="06" data-key="06">
+                <label for="06">គល់គ្រៃដើម</label>
+            </div>
+            <div class="item">
+                <input value="07" name="r" type="checkbox" id="07" data-key="07">
+                <label for="07">ម្ទេស</label>
+            </div>
+            <div class="item">
+                <input value="08" name="r" type="checkbox" id="08" data-key="08">
+                <label for="08">ម្ទេសម៉ាឡេ</label>
+            </div>
+            <div class="item">
+                <input value="09" name="r" type="checkbox" id="09" data-key="09">
+                <label for="09">ម្ទេសផ្លោកខៀវ</label>
+            </div>
+            <div class="item">
+                <input value="10" name="r" type="checkbox" id="10" data-key="10">
+                <label for="10">ម្រេចខ្ចី</label>
+            </div>
+            <div class="item">
+                <input value="11" name="r" type="checkbox" id="11" data-key="11">
+                <label for="11">ត្រយ៉ូងចេក</label>
+            </div>
+            <div class="item">
+                <input value="12" name="r" type="checkbox" id="12" data-key="12">
+                <label for="12">ម្អម</label>
+            </div>
+            <div class="item">
+                <input value="13" name="r" type="checkbox" id="13" data-key="13">
+                <label for="13">ជីរណា</label>
+            </div>
+            <div class="item">
+                <input value="14" name="r" type="checkbox" id="14" data-key="14">
+                <label for="14">ស្លឹកខ្ទឹម</label>
+            </div>
+            <div class="item">
+                <input value="15" name="r" type="checkbox" id="15" data-key="15">
+                <label for="15">ជីម្លូ</label>
+            </div>
+            <div class="item">
+                <input value="16" name="r" type="checkbox" id="16" data-key="16">
+                <label for="16">ត្រប់ស្រួយ</label>
+            </div>
+            <div class="item">
+                <input value="17" name="r" type="checkbox" id="17" data-key="17">
+                <label for="17">ល្ហុង</label>
+            </div>
+            <div class="item">
+                <input value="18" name="r" type="checkbox" id="18" data-key="18">
+                <label for="18">បូគោ</label>
+            </div>
+            <div class="item">
+                <input value="19" name="r" type="checkbox" id="19" data-key="19">
+                <label for="19">ប៉េងប៉ោៈតូច</label>
+            </div>
+            <div class="item">
+                <input value="20" name="r" type="checkbox" id="20" data-key="20">
+                <label for="20">ត្រសក់</label>
+            </div>
+            <div class="item">
+                <input value="21" name="r" type="checkbox" id="21" data-key="21">
+                <label for="21">សន្ដែកគួ</label>
+            </div>
+            <div class="item">
+                <input value="2" name="r" type="checkbox" id="22" data-key="22">
+                <label for="22">ស្ពៃក្ដោបស្វាយ</label>
+            </div>
+            <div class="item">
+                <input value="23" name="r" type="checkbox" id="23" data-key="23">
+                <label for="23">ស្លឹកតយ</label>
+            </div>
+            <div class="item">
+                <input value="24" name="r" type="checkbox" id="24" data-key="24">
+                <label for="24">ខ្ទឹមក្រហម</label>
+            </div>
+            <div class="item">
+                <input value="25" name="r" type="checkbox" id="25" data-key="25">
+                <label for="25">ខ្ទឹមបារាំង</label>
+            </div>
+            <div class="item">
+                <input value="26" name="r" type="checkbox" id="26" data-key="26">
+                <label for="26">អំពិលទំ</label>
+            </div>
+            <div class="item">
+                <input value="27" name="r" type="checkbox" id="27" data-key="27">
+                <label for="27">ក្រូចឆ្មា</label>
+            </div>
+            <div class="item">
+                <input value="28" name="r" type="checkbox" id="28" data-key="28">
+                <label for="28">ការ៉ុត</label>
+            </div>
+            <div class="item">
+                <input value="29" name="r" type="checkbox" id="29" data-key="29">
+                <label for="29">ម្រៈ</label>
+            </div>
+            <div class="item">
+                <input value="30" name="r" type="checkbox" id="30" data-key="30">
+                <label for="30">ម្ដេង</label>
+            </div>
+            <div class="item">
+                <input value="31" name="r" type="checkbox" id="31" data-key="31">
+                <label for="31">ម្នាស់</label>
+            </div>
+            <div class="item">
+                <input value="32" name="r" type="checkbox" id="32" data-key="32">
+                <label for="32">ស្វាយខ្ចី</label>
+            </div>
+            <div class="item">
+                <input value="33" name="r" type="checkbox" id="33" data-key="33">
+                <label for="33">ស្ពៃក្ដោបស</label>
+            </div>
+            <div class="item">
+                <input value="34" name="r" type="checkbox" id="34" data-key="34">
+                <label for="34">ស្លឹកក្រូច</label>
+            </div>
+        </div>
+    </main>
+
+    <main class="bg-gray-100">
+        <div class="JEAN3">
+            ថង់
+        </div>
+        <div id="checklist" class="m-auto shadow-md">
+            <div class="item">
+                <input value="35" name="r" type="checkbox" id="35" data-key="35">
+                <label for="35">ប្រអប់មូលដាក់ទឹកម្រឹច</label>
+            </div>
+            <div class="item">
+                <input value="36" name="r" type="checkbox" id="36" data-key="36">
+                <label for="36">ប្រអប់ទឹកជ្រលួកជ្រុងលេខ1</label>
+            </div>
+            <div class="item">
+                <input value="37" name="r" type="checkbox" id="37" data-key="37">
+                <label for="37">ថង់កិបទឹកត្រីបាយ</label>
+            </div>
+            <div class="item">
+                <input value="38" name="r" type="checkbox" id="38" data-key="38">
+                <label for="38">ថង់ដៃសទំហំ កន្លះគីឡូ</label>
+            </div>
+            <div class="item">
+                <input value="39" name="r" type="checkbox" id="39" data-key="39">
+                <label for="39">ថង់ដៃសទំហំ 2kg</label>
+            </div>
+            <div class="item">
+                <input value="40" name="r" type="checkbox" id="40" data-key="40">
+                <label for="40">ថង់ដៃសទំហំ 3kg</label>
+            </div>
+            <div class="item">
+                <input value="41" name="r" type="checkbox" id="41" data-key="41">
+                <label for="41">ថង់ខ្មៅទំហំ 3kg</label>
+            </div>
+            <div class="item">
+                <input value="42" name="r" type="checkbox" id="42" data-key="42">
+                <label for="42">ថង់ខ្មៅទំហំ 5kg</label>
+            </div>
+            <div class="item">
+                <input value="43" name="r" type="checkbox" id="43" data-key="43">
+                <label for="43">ថង់ខ្មៅទំហំ 10kg</label>
+            </div>
+            <div class="item">
+                <input value="44" name="r" type="checkbox" id="44" data-key="44">
+                <label for="44">ថង់ខ្មៅទំហំ 15kg</label>
+            </div>
+            <div class="item">
+                <input value="45" name="r" type="checkbox" id="45" data-key="45">
+                <label for="45">ប្រអប់ជ្រុងដាក់បុកល្ហុង</label>
+            </div>
+            <div class="item">
+                <input value="46" name="r" type="checkbox" id="46" data-key="46">
+                <label for="46">ប្រអប់មូលធំ = 15000</label>
+            </div>
+            <div class="item">
+                <input value="47" name="r" type="checkbox" id="47" data-key="47">
+                <label for="47">ចង្កឹះ</label>
+            </div>
+            <div class="item">
+                <input value="48" name="r" type="checkbox" id="48" data-key="48">
+                <label for="48">កែវកូកា</label>
+            </div>
+            <div class="item">
+                <input value="49" name="r" type="checkbox" id="49" data-key="49">
+                <label for="49">ស្លាបព្រា</label>
+            </div>
+            <div class="item">
+                <input value="50" name="r" type="checkbox" id="50" data-key="50">
+                <label for="50">ប្រអប់បាយស្នោ</label>
+            </div>
+        </div>
+    </main>
+
+    <main class="bg-gray-100">
+        <div class="JEAN3">
+            សាច់
+        </div>
+        <div id="checklist" class="m-auto shadow-md">
+            <div class="item">
+                <input value="51" name="r" type="checkbox" id="51" data-key="51">
+                <label for="51">សាច់គោ</label>
+            </div>
+            <div class="item">
+                <input value="52" name="r" type="checkbox" id="52" data-key="52">
+                <label for="52">ជើងមាន់</label>
+            </div>
+            <div class="item">
+                <input value="53" name="r" type="checkbox" id="53" data-key="53">
+                <label for="53">ប៉ាតេ</label>
+            </div>
+            <div class="item">
+                <input value="54" name="r" type="checkbox" id="54" data-key="54">
+                <label for="54">ក្ដាមស្រែ</label>
+            </div>
+            <div class="item">
+                <input value="55" name="r" type="checkbox" id="55" data-key="55">
+                <label for="55">ក្ដាមសេះ</label>
+            </div>
+            <div class="item">
+                <input value="56" name="r" type="checkbox" id="56" data-key="56">
+                <label for="56">បង្គា</label>
+            </div>
+            <div class="item">
+                <input value="57" name="r" type="checkbox" id="57" data-key="57">
+                <label for="57">មឹក</label>
+            </div>
+            <div class="item">
+                <input value="58" name="r" type="checkbox" id="58" data-key="58">
+                <label for="58">ងាវ</label>
+            </div>
+            <div class="item">
+                <input value="59" name="r" type="checkbox" id="59" data-key="59">
+                <label for="59">អង្ក្រង</label>
+            </div>
+            <div class="item">
+                <input value="60" name="r" type="checkbox" id="60" data-key="60">
+                <label for="60">ត្រី</label>
+            </div>
+            <div class="item">
+                <input value="61" name="r" type="checkbox" id="61" data-key="61">
+                <label for="61">សាចក្រក</label>
+            </div>
+            <div class="item">
+                <input value="62" name="r" type="checkbox" id="62" data-key="62">
+                <label for="62">អន្ទង់</label>
+            </div>
+            <div class="item">
+                <input value="63" name="r" type="checkbox" id="63" data-key="63">
+                <label for="63">កង្កែប</label>
+            </div>
+            <div class="item">
+                <input value="64" name="r" type="checkbox" id="64" data-key="64">
+                <label for="64">សសៃកែង</label>
+            </div>
+            <div class="item">
+                <input value="65" name="r" type="checkbox" id="65" data-key="65">
+                <label for="65">អណ្ដាតគោ</label>
+            </div>
+            <div class="item">
+                <input value="66" name="r" type="checkbox" id="66" data-key="66">
+                <label for="66">ទឹកប្រហុកឥ</label>
+            </div>
+        </div>
+    </main>
+
+    <main class="bg-gray-100">
+        <div class="JEAN3">
+            គ្រឿងទេស
+        </div>
+        <div id="checklist" class="m-auto shadow-md">
+            <div class="item">
+                <input value="67" name="r" type="checkbox" id="67" data-key="67">
+                <label for="67">ពោត</label>
+            </div>
+            <div class="item">
+                <input value="68" name="r" type="checkbox" id="68" data-key="68">
+                <label for="68">ផ្លែផាសិន</label>
+            </div>
+            <div class="item">
+                <input value="69" name="r" type="checkbox" id="69" data-key="69">
+                <label for="69">ប៊ីចេង</label>
+            </div>
+            <div class="item">
+                <input value="70" name="r" type="checkbox" id="70" data-key="70">
+                <label for="70">ប្រេងខ្យង</label>
+            </div>
+            <div class="item">
+                <input value="71" name="r" type="checkbox" id="71" data-key="71">
+                <label for="71">ខ្នរកញ្ចប់</label>
+            </div>
+            <div class="item">
+                <input value="72" name="r" type="checkbox" id="72" data-key="72">
+                <label for="72">ខ្នរដុំ</label>
+            </div>
+            <div class="item">
+                <input value="73" name="r" type="checkbox" id="73" data-key="73">
+                <label for="73">ល្ងស</label>
+            </div>
+            <div class="item">
+                <input value="74" name="r" type="checkbox" id="74" data-key="74">
+                <label for="74">ម្សៅបំពង</label>
+            </div>
+            <div class="item">
+                <input value="75" name="r" type="checkbox" id="75" data-key="75">
+                <label for="75">ប្រេងម្ទេស</label>
+            </div>
+            <div class="item">
+                <input value="76" name="r" type="checkbox" id="76" data-key="76">
+                <label for="76">ទឹកម្ទេសខេមហ្វូត</label>
+            </div>
+            <div class="item">
+                <input value="77" name="r" type="checkbox" id="77" data-key="77">
+                <label for="77">ដោះគោខាប់</label>
+            </div>
+            <div class="item">
+                <input value="78" name="r" type="checkbox" id="78" data-key="78">
+                <label for="78">បរ័</label>
+            </div>
+            <div class="item">
+                <input value="79" name="r" type="checkbox" id="79" data-key="79">
+                <label for="79">ខ្ទិៈជូងកំប៉ុង</label>
+            </div>
+            <div class="item">
+                <input value="80" name="r" type="checkbox" id="80" data-key="80">
+                <label for="80">ខ្ទឹមស</label>
+            </div>
+            <div class="item">
+                <input value="81" name="r" type="checkbox" id="81" data-key="81">
+                <label for="81">ខ្ទឹមសបំពង</label>
+            </div>
+            <div class="item">
+                <input value="82" name="r" type="checkbox" id="82" data-key="82">
+                <label for="82">សណ្ដែកដី</label>
+            </div>
+            <div class="item">
+                <input value="83" name="r" type="checkbox" id="83" data-key="83">
+                <label for="83">បង្គាក្រៀម</label>
+            </div>
+            <div class="item">
+                <input value="84" name="r" type="checkbox" id="84" data-key="84">
+                <label for="84">ក្រូចជ្រក់</label>
+            </div>
+            <div class="item">
+                <input value="85" name="r" type="checkbox" id="85" data-key="85">
+                <label for="85">ម្ទេសឆ្អើរចិញ្ច្រាំ</label>
+            </div>
+            <div class="item">
+                <input value="86" name="r" type="checkbox" id="86" data-key="86">
+                <label for="86">ម្រេចក្រាប់</label>
+            </div>
+            <div class="item">
+                <input value="87" name="r" type="checkbox" id="87" data-key="87">
+                <label for="87">ទឹកត្រីបង្កងប៉ាក</label>
+            </div>
+            <div class="item">
+                <input value="88" name="r" type="checkbox" id="88" data-key="88">
+                <label for="88">ទឹកខ្មេះ</label>
+            </div>
+            <div class="item">
+                <input value="89" name="r" type="checkbox" id="89" data-key="89">
+                <label for="89">ស្កស</label>
+            </div>
+            <div class="item">
+                <input value="90" name="r" type="checkbox" id="90" data-key="90">
+                <label for="90">ស្កក្រហម</label>
+            </div>
+            <div class="item">
+                <input value="91" name="r" type="checkbox" id="91" data-key="91">
+                <label for="91">ប្រហុកចិញ្ច្រាំ</label>
+            </div>
+            <div class="item">
+                <input value="92" name="r" type="checkbox" id="92" data-key="92">
+                <label for="92">កាពិ</label>
+            </div>
+            <div class="item">
+                <input value="93" name="r" type="checkbox" id="93" data-key="93">
+                <label for="93">ម្សៅនំបុ័ង</label>
+            </div>
+            <div class="item">
+                <input value="94" name="r" type="checkbox" id="94" data-key="94">
+                <label for="94">ទឹកសីុអីវ</label>
+            </div>
+            <div class="item">
+                <input value="95" name="r" type="checkbox" id="95" data-key="95">
+                <label for="95">មីលឿង</label>
+            </div>
+            <div class="item">
+                <input value="96" name="r" type="checkbox" id="96" data-key="96">
+                <label for="96">ម្សៅពោត</label>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
