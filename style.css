@@ -7,6 +7,7 @@
     max-width: 360px;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .JEAN1 {
@@ -21,7 +22,7 @@
 }
 
 .JEAN3 {
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Taprom', sans-serif;
     font-size: 25px;
     display: grid;
     justify-items: center;
@@ -38,7 +39,7 @@
 }
 
 .JEAN4 {
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Taprom', sans-serif;
     font-size: 25px;
     display: grid;
     justify-items: center;
@@ -71,6 +72,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     box-shadow: none;
     font-size: 16px;
+    margin-bottom: 20px;
 }
 
 .item {
@@ -92,7 +94,7 @@
     font-size: 20px;
     white-space: nowrap;
     padding-left: 0px;
-    font-family: 'Hanuman', sans-serif;
+    font-family: 'Taprom', sans-serif;
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
