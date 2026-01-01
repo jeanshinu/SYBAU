@@ -10,22 +10,22 @@
 }
 
 .JEAN1 {
-    font-size: 15px;
+    font-size: 18px;
     margin: auto;
 }
 
 .JEAN2 {
-    font-size: 15px;
+    font-size: 25px;
     display: grid;
 
 }
 
 .JEAN3 {
-    font-family: 'Khmer', sans-serif;
-    font-size: 15px;
+    font-family: 'Hanuman', sans-serif;
+    font-size: 25px;
     display: grid;
     justify-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 8px;
     gap: 10px;
@@ -38,11 +38,11 @@
 }
 
 .JEAN4 {
-    font-family: 'Khmer', sans-serif;
-    font-size: 15px;
+    font-family: 'Hanuman', sans-serif;
+    font-size: 25px;
     display: grid;
     justify-items: center;
-    padding: 15px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 8px;
     gap: 10px;
@@ -79,6 +79,7 @@
     max-width: 360px;
 
 }
+
 #checklist label {
     color: var(--text);
     position: relative;
@@ -88,10 +89,10 @@
     width: fit-content;
     transition: color 0.3s ease;
     margin-right: 0px;
-    font-size: 10px;
+    font-size: 20px;
     white-space: nowrap;
     padding-left: 0px;
-    font-family: 'Khmer', sans-serif;
+    font-family: 'Hanuman', sans-serif;
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -258,11 +259,6 @@
         opacity: 0;
         box-shadow: 0 -15px 0 0px #4f29f0, 14px -8px 0 0px #4f29f0, 14px 8px 0 0px #4f29f0, 0 15px 0 0px #4f29f0, -14px 8px 0 0px #4f29f0, -14px -8px 0 0px #4f29f0;
     }
-}
-
-@font-face {
-    font-family: 'Khmer';
-    src: url(fonts/NiDATaprom.ttf);
 }
 
 #tz {
